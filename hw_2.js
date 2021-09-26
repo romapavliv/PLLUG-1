@@ -4,6 +4,11 @@ function crashBrowser() {
   }
 }
 
+function stransformingStringShortVariant(word){
+  //Можна використати замість деструктуризації [...word] метод word.split('')
+  return [...word].map(letter => (letter == letter.toLowerCase() ? letter.toUpperCase() : letter.toLowerCase())).join('')
+}
+
 function transformingStringEnglish(word) {
   let upperCase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   let newWord = '';
@@ -29,5 +34,4 @@ function transformingStringAll(word) {
   }
   return newWord
 }
-
 
