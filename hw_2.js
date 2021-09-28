@@ -35,3 +35,4 @@ function transformingStringAll(word) {
   return newWord
 }
 
+Завдання виконано але умови в циклах можна упростити, пропущені крапки з комою в коді.
