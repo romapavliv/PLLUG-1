@@ -21,6 +21,9 @@ Object.defineProperty(objWithPrototype1, "age", {
 });
 objWithPrototype1.age = 19;
 
+//4-й спосіб
+Object.assign(objWithPrototype1, {city:'Lviv'});
+
 //4. Створити пустий масив
 
 const emptyArray1 = [];
@@ -87,7 +90,3 @@ function filterInt(arr) {
 //15. Створити функцію, яка нічого не повертає
 
 function noReturnFunction() {}
-
-
-
-
