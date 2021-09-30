@@ -90,3 +90,5 @@ function filterInt(arr) {
 //15. Створити функцію, яка нічого не повертає
 
 function noReturnFunction() {}
+
+Завдання виконано.
