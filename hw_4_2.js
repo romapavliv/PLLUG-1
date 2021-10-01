@@ -37,7 +37,7 @@ function checkBrowserAndOS() {
     Firefox: "Mozilla Firefox",
     Edg: "Microsoft Edge",
     Opera: "Opera",
-    Chrome: "Google Chrome", 
+    Chrome: "Google Chrome",
     Safari: "Safari",
   };
   let myBrowser = "unknown";
@@ -74,9 +74,10 @@ function checkUserStoppingTime() {
     if (timeArr.length > 1) {
       console.log(
         `Час перебування на сторінці, після того як юзер натиснув на закрити вкладку або перезавантажити сторінку : ${
-          (timeArr[timeArr.length - 1] - timeArr[timeArr.length - 2]) / 1000
+          (timeArr[1] - timeArr[0]) / 1000
         } c`
       );
+      timeArr.shift();
     }
     //Для затримки консолі
     return false;
