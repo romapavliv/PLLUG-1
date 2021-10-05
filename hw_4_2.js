@@ -83,3 +83,5 @@ function checkUserStoppingTime() {
     return false;
   };
 }
+
+Завдання виконано, але треба було створити скрипт якицй можна вкласти у HTML і шоб він виконався.
