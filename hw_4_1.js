@@ -45,3 +45,5 @@ function getPositiveNumberFromObj(obj) {
     }
   }, {});
 }
+
+Завдання виконано, але умови в функціях можна упростити.
