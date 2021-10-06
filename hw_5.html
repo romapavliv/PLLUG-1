@@ -57,13 +57,13 @@
       //5. Функція яка видаляє всі елементи які мають клас pet, але якщо крім класу pet є ще інші класи, то вони повинні залишитись
       function deletePet() {
         for (let el of pet) {
-          el.remove("pet");
-          if (el.className == "") {
+          el.classList.remove("pet");
+          if (el.classList.length == 0) {
             el.remove();
           }
         }
       }
-
+      
       //6. Функція яка додає додає новий елемент в список birds - після цього це має бути список у якому новий елемент є першим
       function addBirdAfterBegin() {
         let owl = document.createElement("li");
