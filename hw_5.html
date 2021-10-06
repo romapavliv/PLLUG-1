@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Homework</title>
+    <style>
+      .increase-font-size {
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ul id="animals">
+        <li class="pet">Dog</li>
+        <li id="cat" class="pet">Cat</li>
+        <li class="wild">Elephant</li>
+        <li class="wild">Whale</li>
+        <li class="wild">Horse</li>
+        <li class="wild dangerous">Tiger</li>
+      </ul>
+      <ul id="birds">
+        <li class="wild">Eagle</li>
+        <li class="wild">Sparrow</li>
+        <li class="pet wild">Parrot</li>
+      </ul>
+    </div>
+    <script>
+      const animals = document.querySelector("#animals");
+      const cat = document.querySelector("#cat");
+      const dangerous = document.querySelectorAll(".dangerous");
+      const pet = document.querySelectorAll(".pet");
+      const birds = document.querySelector("#birds");
+
+      //1. Функція яка збільшує розмір шрифту всіх елементів списку animals
+      function makeIncreaseFontAnimals() {
+        animals.classList.add("increase-font-size");
+      }
+
+      //2. Функція яка видаляє всі класи останнього елемента списку animals
+      function deleteClassLastAnimal() {
+        //animals.children[animals.children.length-1].className = '';
+        animals.children[animals.children.length - 1].removeAttribute("class");
+      }
+
+      //3. Функція яка змінює background-color наступного елемента після елемента з id="cat"
+      function changeBackgroundAfterCat() {
+        cat.nextElementSibling.style.backgroundColor = "yellow";
+      }
+
+      //4. Функція яка змінює колір тексту на червоний всім елементам які мають клас dangerous
+      function changeColorTextDangerous() {
+        for (let el of dangerous) {
+          el.style.color = "red";
+        }
+      }
+
+      //5. Функція яка видаляє всі елементи які мають клас pet, але якщо крім класу pet є ще інші класи, то вони повинні залишитись
+      function deletePet() {
+        for (let el of pet) {
+          el.remove("pet");
+          if (el.className == "") {
+            el.remove();
+          }
+        }
+      }
+
+      //6. Функція яка додає додає новий елемент в список birds - після цього це має бути список у якому новий елемент є першим
+      function addBirdAfterBegin() {
+        let owl = document.createElement("li");
+        owl.textContent = "Owl";
+        birds.prepend(owl);
+        //birds.insertAdjacentElement('afterbegin', owl)
+      }
+
+      //7. Функція яка додає додає новий елемент в список birds - після цього це має бути список у якому новий елемент є останнім
+      function addBirdBeforeEnd() {
+        let griffin = document.createElement("li");
+        griffin.textContent = "Griffin";
+        birds.append(griffin);
+        //birds.insertAdjacentElement('beforeend', griffin)
+      }
+
+      //8. Функція яка додає додає новий список id="fish" перед списком birds
+      function addFishBeforeBegin() {
+        let fish =
+          '<ul id="fish"><li class="predatory">Pike</li><li class="predatory">Shark</li><li class="herbivorous">Carp</li></ul>';
+        birds.insertAdjacentHTML("beforebegin", fish);
+      }
+
+      //9. Функція яка змінює порядок елементів в списку animals - останній елемент стає першим, передостанній  - другим, і т.д.
+      function reverseAnimals() {
+        for (let i = animals.children.length - 2; i >= 0; i--) {
+          animals.appendChild(animals.children[i]);
+        }
+      }
+
+      //10. Функція яка перетворює класи елементів списку animals і додає до цих елементів data-* атрибути з назвою класу який був прибраний. Наприклад: <li class="wild dangerous">Tiger</li> => <li data-wild data-dangerous>Tiger</li>
+      function replaceClassToDataAnimals() {
+        for (let i = 0; i < animals.children.length; i++) {
+          for (let j = 0; j < animals.children[i].classList.length; j++) {
+            animals.children[i].setAttribute(
+              `data-${animals.children[i].classList[j]}`,
+              ""
+            );
+          }
+          animals.children[i].removeAttribute("class");
+        }
+      }
+    </script>
+  </body>
+</html>
