@@ -96,3 +96,5 @@ function onClickSubmit(e) {
   div.appendChild(p);
   commentsSection.prepend(div);
 }
+
+Завдання виконано.
