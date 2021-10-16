@@ -1,0 +1,54 @@
+$fonts: (
+  "helveticaneuecyrmedium": (
+    "woff2": "../fonts/helveticaneuecyr-medium-webfont.woff2",
+    "woff": "../fonts/helveticaneuecyr-medium-webfont.woff",
+  ),
+);
+
+//Common
+$main-font: "Poppins", sans-serif;
+$secondary-font: "helveticaneuecyrmedium", sans-serif;
+
+//Text Colors
+$text-grey: #8d8da5;
+$text-white: #ffffff;
+$text-red: #e2222d;
+$text-black: #181c32;
+
+$html-font-size: 13px;
+$body-font-color: $text-grey;
+$body-font: $main-font;
+$body-fz: 1rem;
+$body-fw: 400;
+$body-lh: 1;
+
+//Grid
+$container-width: 1770px;
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+  xl: 1199px,
+  lg: 991px,
+  md: 767px,
+  sm: 575px,
+);
+
+$container-max-width: (
+  xl: 1416px,
+  lg: 1062px,
+  md: 796px,
+  sm: 100%,
+);
+
+$displays: none, inline, block, flex;
+
+//Backgrounds
+$bg-main: url(../../dist/images/background.png);
+
+//Buttons
+$btn-ff: $main-font;
+$btn-sbm-bg: #e2222d;
+$btn-sbm-bg-hover: #d2006b;
+$btn-sbm-fz: 1rem;
+$btn-sbm-color-text: $text-white;

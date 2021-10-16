@@ -1,0 +1,29 @@
+.form-block {
+  margin-bottom: 1rem;
+  &__title {
+    font-size: 2.77rem;
+    font-weight: 500;
+    @media (max-width: 575px) {
+      font-size: 1.5rem;
+    }
+  }
+  &__sign-up-form {
+    margin-top: 4.7rem;
+  }
+}
+
+.sign-up-form {
+  &__link {
+    color: $text-black;
+    text-decoration: underline;
+    margin-top: 1.85rem;
+    display: block;
+    font-weight: 500;
+  }
+}
+
+.sign-up-form { 
+  &__field + &__field {
+    margin-top: 2.3rem;
+  }
+}

@@ -1,0 +1,30 @@
+.text{
+  &__label {
+    margin-bottom: 0.77rem;
+    color: $text-black;
+    font-weight: 500;
+    @media (max-width: 991px) {
+      font-size: 0.9rem;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1.23rem;
+    border: 1px solid #DBDFEB;
+    border-radius: 0.62rem;
+    
+    @media (max-width: 575px) {
+      padding: 0.6rem;
+      font-size: 1rem;
+    }
+    &::placeholder {
+      font-size: 1rem;
+      color: $text-grey;
+      @media (max-width: 575px) {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+

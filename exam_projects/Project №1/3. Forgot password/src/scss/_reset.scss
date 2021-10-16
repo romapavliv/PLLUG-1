@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $html-font-size;
+  @media (max-width: 1199px) {
+    font-size: 12px;
+  }
+  @media (max-width: 991px) {
+    font-size: 11px;
+  }
+  @media (max-width: 767px) {
+    font-size: 10px;
+  }
+  @media (max-width: 575px) {
+    font-size: 9px;
+  }
+}
+
+body {
+  background: $bg-main no-repeat fixed;
+  background-size: 50vw 100%;
+  color: $body-font-color;
+  font: $body-fw $body-fz/$body-lh $body-font; 
+}
+  
+ul {
+  list-style: none;
+}
+  
+img {
+  max-width: 100%;
+}
+  
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+  
+input,
+textarea {
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  resize: none;
+}
+  
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}

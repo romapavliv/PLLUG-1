@@ -1,0 +1,17 @@
+.info-block {  
+  &__title {
+    color: $text-white;
+    font-size: 1.85rem;
+    font-weight: 500;
+    @media (max-width: 575px) {
+      font-size: 1.5rem;
+    }
+  }
+  &__paragraph {
+    color: $text-white;
+    opacity: 0.8;
+    max-width: 56.3rem;
+    margin-top: 1.92rem;
+    font-size: 1.23rem;   
+  }
+}

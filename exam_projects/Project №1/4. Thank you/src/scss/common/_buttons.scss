@@ -1,0 +1,24 @@
+.btn {
+  cursor: pointer;
+  display: block;
+  font-family: $btn-ff;
+  text-align: center;
+  transition: all 0.2s ease-in;
+  border-radius: 10px;
+  &--submit {
+    font-size: $btn-sbm-fz;
+    padding: 1.38rem 3.65rem;
+    background-color: $btn-sbm-bg;
+    color: $btn-sbm-color-text;
+    margin-top: 5rem;
+    &:hover {
+      background-color: $btn-sbm-bg-hover;
+    }
+    @media (max-width: 767px) {
+      padding: 1rem 2.65rem;
+    }
+    @media (max-width: 575px) {
+      padding: 1rem 1rem;
+    }
+  }
+}

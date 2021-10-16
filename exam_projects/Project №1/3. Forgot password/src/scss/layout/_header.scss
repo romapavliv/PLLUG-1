@@ -1,0 +1,13 @@
+.header {
+  margin-top: 90px;
+
+  &__logo {
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    font-size: 3.84rem;
+    color: $text-white;
+    &--red {
+      color: $text-red;
+    }
+  }
+}
