@@ -281,3 +281,6 @@ function convertObjectToMap(obj) {
 function convertMapToObject(map) {
   return Object.fromEntries(map.entries());
 }
+
+Завдання виконано.
+Домашні завдання важко знайти. Постарайтесь краще організовувати, наприклад кожне дз можна загорнути в окрему папку з відповідною назвою.
