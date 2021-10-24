@@ -1,0 +1,22 @@
+.input{
+  &__text {
+    margin-top: 1.39rem;
+    background-color: $bg-white;
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    padding: 0.69rem;
+    width: 18.2rem;
+  }
+  &__submit {
+    cursor: pointer;
+    margin-top: 1.39rem;
+    font-size: 1rem;
+    background-color: $bg-light-green;
+    padding: 0.42rem 2.66rem;
+    border-radius: 0.69rem;
+    &:hover {
+      background: yellow;
+    }
+  }
+}
+

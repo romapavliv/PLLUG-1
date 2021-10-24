@@ -1,0 +1,53 @@
+//Common
+$main-font: "Roboto", sans-serif;
+
+//Text Colors
+
+$text-black: #000000;
+$text-red: #ff0404;
+$text-blue: #040eff;
+$text-light-green: #2aff08;
+$text-purple: #ce08ff;
+
+$html-font-size: 36px;
+$body-font-color: $text-black;
+$body-font: $main-font;
+$body-fz: 1rem;
+$body-fw: 400;
+$body-lh: 1;
+
+//Grid
+$container-width: 1600px;
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+  xl: 1199px,
+  lg: 991px,
+  md: 767px,
+  sm: 575px,
+);
+
+$container-max-width: (
+  xl: 1280px,
+  lg: 960px,
+  md: 720px,
+  sm: 100%,
+);
+
+$displays: none, inline, block, flex;
+
+//Backgrounds
+$bg-start: linear-gradient(
+  107.51deg,
+  #49dc24 11.4%,
+  rgba(28, 36, 234, 0) 115.09%,
+  rgba(30, 45, 224, 0.0518462) 115.09%
+);
+$bg-grey: #c4c4c4;
+$bg-white: #fff;
+$bg-light-green: #00ffd1;
+$bg-game: linear-gradient(90deg, #cfecd0, #ffc5ca);
+$bg-end: linear-gradient(85deg, #fb63f9, #c2e534);
+
+//Buttons

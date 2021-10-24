@@ -1,0 +1,39 @@
+.overlay-3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: $bg-end;
+}
+
+.end {
+  display: none;
+}
+
+.show-end {
+  display: block;
+}
+
+.modal-end {
+  position: fixed;
+  background-color: $bg-grey;
+  z-index: 3;
+  border-radius: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem 3.6rem;
+  width: 20rem;
+  &__title {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+    
+  &__paragraph {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+  }
+}
