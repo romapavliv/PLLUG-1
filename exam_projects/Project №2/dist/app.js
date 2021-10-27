@@ -130,3 +130,5 @@ function addStatistics() {
   `;
   modalEnd.insertAdjacentHTML('beforeend', p)
 }
+
+Завдання виконано
