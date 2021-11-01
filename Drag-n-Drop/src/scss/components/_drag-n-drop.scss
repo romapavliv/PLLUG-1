@@ -1,0 +1,48 @@
+.container--border {
+  border: 3px solid $black;
+  border-radius: 0.66rem;
+}
+
+.container--padding {
+  padding: 0.7rem;
+}
+
+.drop-content {
+  border-radius: 0.66rem;
+  border: 5px dashed $grey;
+  padding: 1.5rem;
+}
+
+.arrow-block {
+  &__img {
+    animation: mover 1s ease infinite alternate;
+    position: relative;
+  }
+  &__desq {
+    margin-top: 0.5rem;
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-1rem);
+  }
+}
+
+.drop-content {
+  &--over {
+    border-color: $red;
+  }
+  &__input {
+    display: none;
+  }
+}
+
+.dragging {
+  opacity:0.5;
+}
+
+

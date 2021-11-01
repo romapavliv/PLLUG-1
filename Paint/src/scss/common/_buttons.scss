@@ -1,0 +1,21 @@
+.btn {
+  cursor: pointer;
+  display: block;
+  font-family: $main-font;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.2s ease-in;
+  border-radius: 20px;
+  font-size: 1rem;
+  padding: 0.4rem 2.33rem;
+  background-color: $bg-red;
+  color: $white;
+  &+& {
+    margin-top: 0.5rem;
+  }
+  
+  &:hover {
+    background-color: $bg-purple;
+  }
+}

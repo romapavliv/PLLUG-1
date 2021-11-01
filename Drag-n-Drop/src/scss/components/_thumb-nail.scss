@@ -1,0 +1,46 @@
+.thumb-nail {
+  padding: 0.66rem;
+  border: 1px solid $red;
+  overflow: hidden;
+  background-size: cover;
+  border-radius: 0.66rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  &__desq {
+    margin-top: 0.5rem;
+    max-width: 7rem;
+    word-wrap: break-word;
+  }
+  &::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.33rem 0;
+    color: $white;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 1rem;
+    text-align: center;
+  }
+  &__close {
+    cursor: pointer;
+    color: $red;
+    position: absolute;
+    &:hover {
+      color: $orange;
+    }
+  }
+  &__img {
+    width: 120px;
+    height: 120px;
+    background-image: var(--background);
+    background-size: 120px 120px;
+    background-position: 0px 0px;    
+  }
+}
+
+.over {
+  border-color: $blue;
+  border-style: dashed;
+}
