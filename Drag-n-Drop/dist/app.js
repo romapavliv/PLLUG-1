@@ -142,3 +142,5 @@ function createArrow() {
     <p class="arrow-block__desq">You can drag and drop files here to add them<p>                       
   </div>`;
 }
+
+Завдання виконано.
