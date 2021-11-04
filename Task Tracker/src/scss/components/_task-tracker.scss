@@ -1,0 +1,53 @@
+.task-area {
+  border: 1px solid $black;
+  border-radius: 25px;
+  padding: 0.5rem;
+  margin-top: 0.5rem;  
+  &__input {
+    font-size: 1rem;
+    width: 90%;
+  }
+  &__add {
+    color: $green;
+    font-size: 2rem;
+    cursor: pointer;
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+.submited-tasks {
+  &__element {
+    border-top: 1px solid $grey;
+    padding: 0.5rem;
+  }
+  &__list {
+    font-weight: 800;
+    margin-top: 1rem;
+    &:last-child {
+      border-bottom: 1px solid $grey;
+    }
+  }
+  &__time {
+    margin-right: 0.5rem;
+  }
+  &__play, &__pause {
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  &__delete {
+    cursor: pointer;
+    color: $red;
+    font-size: 1.5rem;
+  }
+  &__content {
+    word-wrap: break-word;
+    max-width: 60%;
+  }
+}
+
+.bg-light-yellow {
+  background-color: $bg-light-yellow;
+}
+

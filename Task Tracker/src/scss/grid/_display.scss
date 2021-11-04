@@ -1,0 +1,24 @@
+@each $display in $displays {
+  .d-#{$display} {
+    display: $display;
+  }
+}
+
+@each $name, $value in $grid-breakpoints {
+  @include media-breakpoint($value) {
+    @each $display in $displays {
+      .d-#{$name}-#{$display} {
+        display: $display;
+      }
+    }
+  }
+}
+
+.margin-auto-x {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
