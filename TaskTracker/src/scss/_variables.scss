@@ -1,0 +1,56 @@
+//Common
+$main-font: "Roboto", sans-serif;
+
+//Fontawesome
+$fa-font-path: "../fonts";
+
+//Colors
+$grey: #ced4da;
+$orange: #f5ad42;
+$black: #000000;
+$red: #ff0000;
+$white: #ffffff;
+$blue: #004dff;
+$green: #008000;
+
+//Text Colors
+
+$text-black: #000000;
+
+$html-font-size: 18px;
+$body-font-color: $text-black;
+$body-font: $main-font;
+$body-fz: 1rem;
+$body-fw: 400;
+$body-lh: 1;
+
+//Grid
+$container-width: 1070px;
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+  xl: 1199px,
+  lg: 991px,
+  md: 767px,
+  sm: 575px,
+);
+
+$container-max-width: (
+  xl: 856px,
+  lg: 642px,
+  md: 428px,
+  sm: 100%,
+);
+
+$displays: none, inline, block, flex;
+
+//Backgrounds
+$bg-body: linear-gradient(90deg, #e38010, #1535bf);
+$bg-header: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+$bg-grey: #c4c4c4;
+$bg-red: #f50b0b;
+$bg-purple: #ff0088;
+$bg-white: #ffffff;
+$bg-light-yellow: #fff48b
+//Buttons
