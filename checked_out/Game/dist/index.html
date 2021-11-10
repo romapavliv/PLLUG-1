@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="registration">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col col-8">
+            <div class="modal d-flex flex-column align-items-center">
+              <h2 class='modal__title'>Enter your nickname</h2>
+              <form class="d-flex flex-column align-items-center">
+                <input class="input__text" type="text" placeholder="Your nickname">
+                <input class="d-block input__submit" type="submit" value="Start game">
+              </form>           
+            </div>         
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="game">
+      <div class="overlay-2"></div>
+      <div class="container">
+        <div class="row cards">
+          <div class="col col-2">
+            <div class="statistic">
+              <div class="statistic__moves">
+                <h3 class="statistic__moves-completed">Moves completed</h3>
+                <h3 class="statistic__current-moves">0</h3>
+              </div>
+              <div class="statistic__player">
+                <h3 class="statistic__player-title">Current player</h3>
+                <h3 class="statistic__current-player"></h3>
+              </div>              
+            </div>           
+          </div>
+          <div class="col col-2">
+            <div class="card bg"></div>
+          </div>
+          <div class="col col-2">
+            <div class="card bg"></div>
+          </div>
+          <div class="col col-2">
+            <div class="card bg"></div>
+          </div>
+          <div class="col col-2">
+            <div class="card bg"></div>
+          </div>
+          <div class="col col-2">
+            <div class="statistic">
+              <div class="statistic__points">
+                <h3 class="statistic__points-earned">Points earned</h3>
+                <h3 class="statistic__current-points">0</h3>
+              </div>
+              <div class="statistic__combo">
+                <h3 class="statistic__max-combo">Max combo</h3>
+                <h3 class="statistic__current-combo">0</h3>
+              </div>              
+            </div>           
+          </div>          
+        </div>
+        <div class="row justify-content-center cards">
+          <div class="col col-2">
+            <div class="card bg"></div>
+          </div>
+          <div class="col col-2">
+            <div class="card bg"></div>
+          </div>
+          <div class="col col-2">
+            <div class="card bg"></div>
+          </div>
+          <div class="col col-2">
+            <div class="card bg"></div>
+          </div>          
+        </div>
+        <div class="row justify-content-center cards">
+          <div class="col col-2">
+            <div class="card bg"></div>
+          </div>
+          <div class="col col-2">
+            <div class="card bg"></div>
+          </div>
+          <div class="col col-2">
+            <div class="card bg"></div>
+          </div>
+          <div class="col col-2">
+            <div class="card bg"></div>
+          </div>                  
+        </div>
+        <div class="row justify-content-center cards">
+          <div class="col col-2">
+            <div class="card bg"></div>
+          </div>
+          <div class="col col-2">
+            <div class="card bg"></div>
+          </div>
+          <div class="col col-2">
+            <div class="card bg"></div>
+          </div>
+          <div class="col col-2">
+            <div class="card bg"></div>
+          </div>                  
+        </div>
+      </div>
+    </div>
+    <div class="end">
+      <div class="overlay-3"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col col-8">
+            <div class="modal-end d-flex flex-column">
+              <h2 class='modal-end__title'>Your statistics</h2>        
+            </div>         
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
