@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Travel Gid</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="main-title">Travel Gid</h1>
+        <h1 class="main-title">ⓒ Nesterenko Yevhen</h1>
+      </div>
+    </header>
+    <section id="main">
+      <div class="container container--upgrade">
+        <form class="request-form">
+          <h2 class="request-form__title">Find what you want</h2>
+          <div class="row">
+            <div
+              class="
+                col col-12
+                d-flex
+                justify-content-center
+                align-items-center
+              "
+            >
+              <select class="request-form__select-place">
+                <option>Restaurant</option>
+                <option>Museum</option>
+                <option>Hotel</option>
+                <option>Cafe</option>
+                <option>McDonald’s</option>
+              </select>
+              <div class="request-form__icon-place">
+                <i class="fas fa-utensils"></i>
+              </div>
+            </div>
+            <div class="col col-12">
+              <h3 class="request-form__title-distances">Choose radius:</h3>
+              <div
+                class="
+                  request-form__all-distances
+                  d-flex
+                  justify-content-between
+                "
+              >
+                <div class="request-form__input-distance">
+                  <input
+                    id="distance1"
+                    type="radio"
+                    name="distance"
+                    value="0.5"
+                    checked
+                  />
+                  <label for="distance1">0.5</label>
+                </div>
+                <div class="request-form__input-distance">
+                  <input
+                    id="distance2"
+                    type="radio"
+                    name="distance"
+                    value="1"
+                  />
+                  <label for="distance2">1</label>
+                </div>
+                <div class="request-form__input-distance">
+                  <input
+                    id="distance3"
+                    type="radio"
+                    name="distance"
+                    value="5"
+                  />
+                  <label for="distance3">5</label>
+                </div>
+                <div class="request-form__input-distance">
+                  <input
+                    id="distance4"
+                    type="radio"
+                    name="distance"
+                    value="10"
+                  />
+                  <label for="distance4">10</label>
+                </div>
+                <div class="request-form__input-distance">
+                  <input
+                    id="distance5"
+                    type="radio"
+                    name="distance"
+                    value="20"
+                  />
+                  <label for="distance5">20</label>
+                </div>
+                <div class="request-form__input-distance">
+                  <input
+                    id="distance6"
+                    type="radio"
+                    name="distance"
+                    value="50"
+                  />
+                  <label for="distance6">50</label>
+                </div>
+                <div class="request-form__input-distance">
+                  <input
+                    id="distance7"
+                    type="radio"
+                    name="distance"
+                    value="100"
+                  />
+                  <label for="distance7">100</label>
+                </div>
+              </div>
+            </div>
+            <div class="col col-12">
+              <h3 class="request-form__title-typeResponse">
+                Type of response:
+              </h3>
+              <div
+                class="
+                  request-form__typeResponse-all
+                  d-flex
+                  justify-content-around
+                "
+              >
+                <div class="request-form__input-response">
+                  <input
+                    id="responseCsv"
+                    type="radio"
+                    name="response"
+                    value="csv"
+                    checked
+                  />
+                  <label for="responseCsv">CSV</label>
+                </div>
+                <div class="request-form__input-response">
+                  <input
+                    id="responseMap"
+                    type="radio"
+                    name="response"
+                    value="search"
+                  />
+                  <label for="responseMap">Google maps</label>
+                </div>
+              </div>
+            </div>
+            <div class="col col-12 d-flex justify-content-center">
+              <input class="request-form__submit" type="submit" value="Send" />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="container">
+        <div class="myMap"></div>
+      </div>
+    </section>
+    <script
+      type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjZRHz8JM5nJByVAq6ntpvUlvzI1tFI5A"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
