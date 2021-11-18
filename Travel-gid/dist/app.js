@@ -219,3 +219,4 @@ function addDesq(infoWindow, map, marker) {
     infoWindow.open(map, marker);
   });
 }
+Завдання виконано
