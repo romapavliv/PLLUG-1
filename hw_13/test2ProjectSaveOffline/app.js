@@ -139,3 +139,4 @@ if (navigator.serviceWorker) {
       .catch((err) => console.log(`Service Worker Error: ${err}`));
   });
 }
+Завдання виконано
